@@ -1,0 +1,81 @@
+  // 改為 mixin 寫法
+  .container {
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding: 0 12px !important;
+    @include pad{
+      max-width: 720px;
+    }
+    @include mobile{
+      max-width: 372px;
+      padding: 0 0px !important;
+    }
+  }
+  
+  // 註：斷點設定為示意用，常用斷點可以參考看看 Bootstrap
+  // https://bootstrap5.hexschool.com/docs/5.0/layout/breakpoints/
+  // https://bootstrap5.hexschool.com/docs/5.0/layout/containers/
+.navbar-wrap {
+  display: flex;
+  justify-content: space-between;
+  
+  @include mobile{
+    flex-direction: column;
+    /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+
+.navbar-logo {
+  width: 80px;
+  
+  @include mobile{
+    margin: 0 0 16px 16px;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  
+  @include mobile{
+    flex-wrap: wrap;
+  }
+}
+
+.navbar-item {
+  height: 100%;
+  &:last-child{
+    padding-right: 0;
+  }
+  @include mobile{
+    width: 50%;
+    margin-right: 0px;
+    border: 1px solid #ffffff;
+  }
+}
+
+.navbar-link {
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 32px;
+  text-decoration: none;
+  padding-right: 0;
+  &:hover{
+    opacity: 0.7;
+  }
+  @include pad{
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+

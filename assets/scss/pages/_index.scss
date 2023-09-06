@@ -1,0 +1,19 @@
+.banner{
+  background: url('https://github.com/snow1224/2023Hexschool_week4hw/blob/master/assets/images/home-header.png?raw=true') no-repeat center center;
+  background-size: cover;
+  height: 840px;
+  span{
+      font-size: 36px;
+      display: block;
+      color:$primary-dark;
+  }
+  @include mobile{
+    background: url('https://github.com/snow1224/2023Hexschool_week4hw/blob/master/assets/images/home-header-sm.png?raw=true') no-repeat center center;
+      height: 394px;
+  }
+}
+
+// 將bootstrap5 的btn覆蓋不要圓角
+.btn{
+  border-radius: 0px;
+}

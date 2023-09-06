@@ -1,0 +1,40 @@
+*,*:before,*{
+    &:after{
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+}
+
+nav{
+    padding: 16px 0;
+  
+    @media (max-width: 768px) {
+        padding-bottom: 0;
+     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1, h2, h3{
+    font-family: "Noto Sans TC", "bold";
+}
+
+h5{
+    font-family: "Noto Sans TC", "medium";
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}

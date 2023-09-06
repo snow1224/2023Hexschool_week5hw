@@ -1,0 +1,52 @@
+footer{
+  background-color: #AA0601;
+}
+
+.sitemap{
+  ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    margin: 12px 48px;
+  }
+}
+
+.links {
+  ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    margin: 24px 48px;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.concact_info {
+  p{
+    font-size: 36px;
+  }
+}
+
+.copyright{
+  margin-top: 48px;
+  margin-bottom: 24px;
+  ul{
+    display: flex;
+  }
+  a{
+    text-decoration: none;
+    margin: 24px 24px;
+    font-size: 14px;
+  }
+}
